@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorBlack">#000000</color>
+    <color name="colorTransparent">#00000000</color>
+
+    <color name="colorBrandBlack">#2e2e2e</color>
+
+    <color name="colorBackground">#eeeeee</color>
+    <color name="colorBackgroundSecondary">#ffffff</color>
+    <color name="colorPrimary">#076AA7</color>
+    <color name="colorPrimaryVariant">#076AA7</color>
+    <color name="colorOnPrimary">#ffffff</color>
+    <color name="colorSecondary">#B12626</color>
+    <color name="colorSecondaryVariant">#B12626</color>
+    <color name="colorOnSecondary">#ffffff</color>
+    <color name="colorSurface">#ffffff</color>
+    <color name="colorError">#B12626</color>
+    <color name="colorOnBackground">#000000</color>
+    <color name="colorOnError">#ffffff</color>
+    <color name="colorOnSurface">#000000</color>
+    <color name="colorOnSurfaceSecondary">#777777</color>
+
+    <color name="colorPositive">#2E7D32</color>
+    <color name="colorOnDark">#ffffff</color>
+    <color name="colorTicketCard">#ffffff</color>
+    <color name="colorProgressBackground">#dddddd</color>
+
+    <color name="colorResultDefault">#076AA7</color>
+    <color name="colorResultSuccess">#2E7D32</color>
+    <color name="colorResultFail">#B12626</color>
+</resources>

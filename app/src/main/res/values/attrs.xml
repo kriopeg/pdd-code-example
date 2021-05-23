@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ThemeAttributes">
+        <attr name="colorBackgroundSecondary" format="integer"/>
+        <attr name="colorPositive" format="integer"/>
+        <attr name="colorOnDark" format="integer"/>
+        <attr name="colorOnSurfaceSecondary" format="integer"/>
+        <attr name="colorTicketCard" format="integer"/>
+        <attr name="colorProgressBackground" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="krio">
+        <attr name="segmentsCount" format="integer"/>
+        <attr name="segmentsSpacing" format="dimension"/>
+        <attr name="segmentCornerRadius" format="dimension"/>
+        <attr name="progressColor" format="color"/>
+        <attr name="startAlpha" format="integer"/>
+        <attr name="progress" format="integer"/>
+        <attr name="maxProgress" format="integer"/>
+    </declare-styleable>
+
+</resources>

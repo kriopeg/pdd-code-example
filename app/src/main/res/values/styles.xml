@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="mainMenuTitle">
+        <item name="android:layout_marginTop">@dimen/vertical_margin_default_x2</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">?attr/colorOnBackground</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="mainMenuCard">
+        <item name="cardBackgroundColor">?attr/colorTicketCard</item>
+        <item name="cardForegroundColor">@null</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="android:layout_marginTop">@dimen/vertical_margin_default_half</item>
+    </style>
+
+    <style name="mainMenuCardTitle">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">?attr/colorOnBackground</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="mainMenuCardDescription">
+        <item name="android:textColor">?attr/colorOnSurfaceSecondary</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="mainMenuCardInfo">
+        <item name="android:textColor">?attr/colorOnDark</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Toolbar" parent="Theme.CodeExample">
+        <item name="colorControlNormal">@color/colorOnDark</item>
+    </style>
+
+    <style name="defaultButton" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:textColor">?attr/colorOnDark</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="ticketsCard">
+        <item name="cardBackgroundColor">@android:color/white</item>
+        <item name="cardForegroundColor">@null</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+</resources>

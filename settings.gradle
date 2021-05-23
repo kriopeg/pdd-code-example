@@ -1,0 +1,4 @@
+rootProject.name = "Code Example"
+include ':app'
+include ':domain'
+include ':data'

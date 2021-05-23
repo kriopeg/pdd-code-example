@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.CodeExample" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorBackgroundSecondary">@color/colorBackgroundSecondary</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorError">@color/colorError</item>
+        <item name="colorOnBackground">@color/colorOnBackground</item>
+        <item name="colorOnError">@color/colorOnError</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+        <item name="colorOnSurfaceSecondary">@color/colorOnSurfaceSecondary</item>
+        <item name="colorOnDark">@color/colorOnDark</item>
+        <item name="colorPositive">@color/colorPositive</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="colorTicketCard">@color/colorTicketCard</item>
+        <item name="colorProgressBackground">@color/colorProgressBackground</item>
+    </style>
+</resources>

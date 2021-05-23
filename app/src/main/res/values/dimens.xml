@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_side_margins">16dp</dimen>
+    <dimen name="tickets_side_margins">0dp</dimen>
+    <dimen name="horizontal_margin_default">16dp</dimen>
+    <dimen name="horizontal_margin_default_half">8dp</dimen>
+    <dimen name="horizontal_margin_default_x2">32dp</dimen>
+    <dimen name="vertical_margin_default">16dp</dimen>
+    <dimen name="vertical_margin_default_half">8dp</dimen>
+    <dimen name="vertical_margin_default_x2">32dp</dimen>
+</resources>

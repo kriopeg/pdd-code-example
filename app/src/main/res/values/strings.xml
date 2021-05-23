@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Code Example</string>
+    <string name="ticket_title">Билет №%1$d</string>
+    <string name="answered_questions_count">Вопросов решено: %1$d/%2$d</string>
+    <string name="tickets_list_empty">Билеты отсутствуют</string>
+    <string name="questions_progress_start_position">0</string>
+    <string name="questions_progress_end_position">800</string>
+    <string name="questions_progress">Решенные вопросы</string>
+    <string name="stats">Статистика</string>
+    <string name="tickets">Билеты</string>
+    <string name="exam">Экзамен</string>
+    <string name="study">Вопросы от ГИБДД</string>
+    <string name="adaptive_mode">Адаптивный режим</string>
+    <string name="adaptive_mode_description">Описание одного из режимов подготовки к экзамену в ГИБДД</string>
+    <string name="ready_percent">Вы готовы на %1$d%%</string>
+    <string name="settings">настройки</string>
+    <string name="loading">Loading</string>
+</resources>

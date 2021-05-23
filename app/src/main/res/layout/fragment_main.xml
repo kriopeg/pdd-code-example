@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/vertical_margin_default">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/main_side_margins" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/main_side_margins" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/label_solved_questions"
+            style="@style/mainMenuTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/questions_progress"
+            app:layout_constraintStart_toStartOf="@+id/guideline_left"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/value_solved_questions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/label_solved_questions"
+            app:layout_constraintStart_toEndOf="@+id/label_solved_questions"
+            app:layout_constraintTop_toTopOf="@+id/label_solved_questions"
+            tools:text="300" />
+
+        <ru.kriopeg.example.customviews.SegmentedProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+            app:layout_constraintStart_toStartOf="@+id/guideline_left"
+            app:layout_constraintTop_toBottomOf="@+id/label_solved_questions"
+            app:maxProgress="800"
+            app:progressColor="@color/colorPrimary"
+            app:segmentCornerRadius="2dp"
+            app:segmentsCount="40"
+            app:segmentsSpacing="2dp"
+            app:startAlpha="30" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/label_progress_minimum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/questions_progress_start_position"
+            android:textColor="?attr/colorOnSurfaceSecondary"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline_left"
+            app:layout_constraintTop_toBottomOf="@+id/progress_bar" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/label_progress_maximum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/questions_progress_end_position"
+            android:textColor="?attr/colorOnSurfaceSecondary"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+            app:layout_constraintTop_toBottomOf="@+id/progress_bar"
+            tools:text="800" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_stats"
+            style="@style/defaultButton"
+            android:layout_width="112dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="@dimen/horizontal_margin_default_half"
+            android:text="@string/stats"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="?attr/colorOnBackground"
+            app:backgroundTint="?attr/colorProgressBackground"
+            app:layout_constraintBottom_toTopOf="@+id/progress_bar"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_right" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_tickets"
+            style="@style/defaultButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="@dimen/vertical_margin_default"
+            android:layout_marginEnd="@dimen/horizontal_margin_default_half"
+            android:text="@string/tickets"
+            app:layout_constraintEnd_toStartOf="@+id/btn_exam"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/guideline_left"
+            app:layout_constraintTop_toBottomOf="@+id/label_progress_minimum" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_exam"
+            style="@style/defaultButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="@dimen/horizontal_margin_default_half"
+            android:layout_marginTop="@dimen/vertical_margin_default"
+            android:text="@string/exam"
+            app:backgroundTint="?attr/colorError"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_tickets"
+            app:layout_constraintTop_toBottomOf="@+id/label_progress_minimum" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/title_learning_modes"
+            style="@style/mainMenuTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/study"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+            app:layout_constraintStart_toStartOf="@+id/guideline_left"
+            app:layout_constraintTop_toBottomOf="@+id/btn_tickets" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_adaptive"
+            style="@style/mainMenuCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+            app:layout_constraintStart_toStartOf="@+id/guideline_left"
+            app:layout_constraintTop_toBottomOf="@+id/title_learning_modes">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/horizontal_margin_default">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/card_title_adaptive"
+                    style="@style/mainMenuCardTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adaptive_mode"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/divider_adaptive"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/vertical_margin_default_half"
+                    android:background="@color/colorBackground"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/card_title_adaptive" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/description_adaptive"
+                    style="@style/mainMenuCardDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/vertical_margin_default_half"
+                    android:text="@string/adaptive_mode_description"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider_adaptive" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/label_ready_percent"
+                    style="@style/mainMenuCardInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/ready_percent"
+                    android:textColor="?attr/colorPositive"
+                    app:layout_constraintBottom_toBottomOf="@+id/card_title_adaptive"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
